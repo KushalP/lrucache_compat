@@ -1,5 +1,7 @@
 # LrucacheCompat
 
+[![continuous integration status](https://travis-ci.org/KushalP/lrucache_compat.svg?branch=master)](http://travis-ci.org/KushalP/lrucache_compat)
+
 TODO: Write a gem description
 
 ## Installation
