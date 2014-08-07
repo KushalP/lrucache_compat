@@ -5,7 +5,7 @@ require 'lrucache_compat/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "lrucache_compat"
-  spec.version       = LrucacheCompat::VERSION
+  spec.version       = LRUCacheCompat::VERSION
   spec.authors       = ["Kushal Pisavadia"]
   spec.email         = ["kushal.pisavadia@digital.cabinet-office.gov.uk"]
   spec.summary       = %q{TODO: Write a short summary. Required.}

@@ -1,5 +1,5 @@
 require "lrucache_compat/version"
 
-module LrucacheCompat
+module LRUCacheCompat
   # Your code goes here...
 end
