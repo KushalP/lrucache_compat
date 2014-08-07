@@ -20,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+cache = LRUCacheCompat::LRUCache.new(ttl: 1.hour)
+cache.store("banana", "yellow")
+cache.store("monkey", "banana", Time.now + 3.days)
+```
 
 ## Contributing
 
