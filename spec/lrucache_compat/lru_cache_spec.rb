@@ -32,5 +32,23 @@ describe LRUCacheCompat::LRUCache do
         expect(subject.new(default: default).default).to eq(default)
       end
     end
+
+    describe ":ttl" do
+      it "should default :ttl to 0 (no expiration)" do
+        expect(subject.new.ttl).to eq(0)
+      end
+
+      it "should accept a :ttl parameter" do
+        expect(subject.new(:ttl => 98.6).ttl).to eq(98.6)
+      end
+
+      it "should raise an exception if :ttl parameter can't be converted to a float" do
+        expect { subject.new(:ttl => "moocow") }.to raise_exception
+      end
+
+      it "should raise an exception if :ttl parameter is converted to a negative float" do
+        expect { subject.new(:ttl => -1) }.to raise_exception
+      end
+    end
   end
 end
