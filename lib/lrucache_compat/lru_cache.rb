@@ -10,5 +10,9 @@ module LRUCacheCompat
       raise "max_size must not be negative" if @max_size < 0
       raise "ttl must not be negative" if @ttl < 0
     end
+
+    def empty?
+      true
+    end
   end
 end

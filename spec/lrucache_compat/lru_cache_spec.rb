@@ -50,5 +50,9 @@ describe LRUCacheCompat::LRUCache do
         expect { subject.new(:ttl => -1) }.to raise_exception
       end
     end
+
+    it "should initially be empty" do
+      expect(subject.new).to be_empty
+    end
   end
 end
